@@ -240,43 +240,26 @@ margin-top:40px;
 .card{
 background:#1e293b;
 padding:20px;
-border-radius:12px;
-transition:0.4s;
+border-radius:14px;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+transform-style:preserve-3d;
 position:relative;
 overflow:hidden;
+cursor:pointer;
+}
+
+.card:hover{
+box-shadow:0 30px 60px rgba(0,0,0,0.6);
 }
 
 .card img{
 width:100%;
 border-radius:10px;
-margin-bottom:10px;
+transition:transform 0.3s;
 }
 
-.card h3{
-margin:10px 0;
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.03);
-box-shadow:0 15px 40px rgba(0,0,0,0.6);
-}
-
-.card::before{
-content:"";
-position:absolute;
-width:200%;
-height:200%;
-background:radial-gradient(circle,#38bdf8,transparent);
-top:-150%;
-left:-150%;
-opacity:0.08;
-transition:0.5s;
-pointer-events:none;
-}
-
-.card:hover::before{
-top:-50%;
-left:-50%;
+.card:hover img{
+transform:scale(1.05);
 }
 
 .btn-demo{
@@ -626,6 +609,7 @@ border-radius:60% 40% 50% 60% / 50% 60% 40% 55%;
 }
 
 }
+
 
 
 
