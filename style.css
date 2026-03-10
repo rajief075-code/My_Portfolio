@@ -610,6 +610,13 @@ border-radius:60% 40% 50% 60% / 50% 60% 40% 55%;
 
 }
 
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+perspective:1000px;
+}
 
 
 
